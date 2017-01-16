@@ -1,0 +1,258 @@
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 80px;
+}
+
+.mb {
+	margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background: #f9f9f9;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+  color: #4a4a4a;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+ -webkit-background-size: 100%;
+ -moz-background-size: 100%;
+ -o-background-size: 100%;
+  background-size: 100%;
+
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+  background-size: cover;
+}
+
+#headerwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#headerwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#social {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #f2f2f2;
+}
+
+#social i {
+	font-size: 40px;
+	color: #4a4a4a
+}
+
+#social i:hover {
+	color: #1abc9c
+}
+
+#footerwrap {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background-color: #2f2f2f;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+}
+
+#cards h1 {
+	text-align: left;
+	margin-left: 13px;
+}
+
+/* Gallery */
+.gallery {
+	margin-top: 30px;
+}
+
+.gallery img:hover {
+	opacity: 0.9;
+}
+
+
+/* ==========================================================================
+  	Helpers Card
+   ========================================================================== */
+
+
+.border-tlr-radius { 
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px; 
+}
+
+.text-center { text-align: center; }
+
+.radius { border-radius: 2px; }
+
+.padding-tb { padding-top: 1.6rem; padding-bottom: 1.6rem;}
+
+.shadowDepth0 { box-shadow: 0 1px 3px rgba(0,0,0, 0.24); }
+
+
+
+/* ==========================================================================
+   Card Style
+   ========================================================================== */
+
+
+.card {
+    background-color: #fff;
+    margin-bottom: 1.6rem;
+}
+
+.card__padding {
+    padding: 1.6rem;
+}
+ 
+.card__image {
+    min-height: 100px;
+    background-color: #eee;
+}
+
+.card__image img {
+    width: 100%;
+    max-width: 100%;
+  	display: block;
+}
+
+.card__content {
+    position: relative;
+}
+
+
+.card__article {
+	text-align: left;
+}
+
+.card__article h2 {
+	font-size: 20px;
+}
+
+.card__article a:hover {
+	text-decoration: none;
+}
+
+.card__button {
+    float: right;
+    position: relative;
+    margin-top: -42px;
+}
+
+.card__button i {
+	margin-top: 10px;
+	font-size: 27px;
+}
+
+.button-toggle {
+    z-index: 2;
+}
+
+.button-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    outline: 0;
+
+    box-shadow: 
+            0 1px 3px rgba(0,0,0, 0.12),
+            0 1px 3px rgba(0,0,0, 0.12);
+}
+
+.button-icon:hover,
+.button-icon:focus {
+  	box-shadow: 
+    	0 2px 4px rgba(0,0,0, 0.12),
+    	0 2px 4px rgba(0,0,0, 0.12);
+
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
